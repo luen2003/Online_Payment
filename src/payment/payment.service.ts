@@ -25,8 +25,8 @@ export class PaymentService {
       orderCode: Number(body.orderId),
       amount: body.amount,
       description: body.description,
-      cancelUrl: 'https://example.com/cancel',
-      returnUrl: 'https://example.com/return',
+      cancelUrl: 'https://react-app-bank-code.vercel.app/',
+      returnUrl: 'https://react-app-bank-code.vercel.app/',
     };
     const signature = generateSignature(
       dataForSignature,
